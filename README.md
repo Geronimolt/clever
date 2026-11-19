@@ -1,4 +1,4 @@
-# clever
+# Clever
 
 Core AI response guidelines, packaged as a Hermes skill.
 
