@@ -1,7 +1,7 @@
 ---
 name: clever
 description: "Use on every reply. Core response guidelines."
-upstream: https://github.com/Geronimolt/Clever
+upstream: https://github.com/Geronimolt/clever
 disable-model-invocation: true
 ---
 

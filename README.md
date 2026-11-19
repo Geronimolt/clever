@@ -13,13 +13,13 @@ a response quality check before finalizing.
 Hermes Agent:
 
 ```bash
-hermes skills install https://raw.githubusercontent.com/Geronimolt/Clever/master/skills/clever/SKILL.md --yes
+hermes skills install https://raw.githubusercontent.com/Geronimolt/clever/master/skills/clever/SKILL.md --yes
 ```
 
 Other agents — clone and copy the skill directory into your skills folder:
 
 ```bash
-git clone https://github.com/Geronimolt/Clever.git
+git clone https://github.com/Geronimolt/clever.git
 # Claude Code: ~/.claude/skills | Codex: ~/.codex/skills | OpenCode: ~/.config/opencode/skills
 cp -r Clever/skills/clever ~/.claude/skills/
 ```
