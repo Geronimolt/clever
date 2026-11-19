@@ -1,8 +1,6 @@
 # clever
 
-Upstream of the `clever` skill (frontmatter name `clever`, directory name `clever`).
-
-Core AI response guidelines, packaged as a Hermes skill.
+The `clever` skill: core AI response guidelines, packaged as a Hermes skill.
 
 Seven principles: think before answering, simplicity first, stay within scope,
 goal-driven execution, handle uncertainty explicitly, preserve user intent, and
@@ -20,8 +18,9 @@ Other agents — clone and copy the skill directory into your skills folder:
 
 ```bash
 git clone https://github.com/Geronimolt/clever.git
-# Claude Code: ~/.claude/skills | Codex: ~/.codex/skills | OpenCode: ~/.config/opencode/skills
-cp -r Clever/skills/clever ~/.claude/skills/
+# Set SKILLS_DIR to your agent's folder: ~/.claude/skills | ~/.codex/skills | ~/.config/opencode/skills
+SKILLS_DIR=~/.claude/skills
+cp -r clever/skills/clever "$SKILLS_DIR"/
 ```
 
 Hermes loads it via `skills.auto_load`; the `disable-model-invocation` flag keeps it out of per-task selection.
@@ -33,6 +32,8 @@ Hermes:
 ```bash
 hermes config set skills.auto_load '["attention-kind","clever","superpowers:using-superpowers"]'
 ```
+
+This replaces the whole list — include any skills you already auto-load.
 
 Other agents: add `Always load the clever skill at session start.` to `AGENTS.md`, `CLAUDE.md`, or the equivalent instruction file.
 
