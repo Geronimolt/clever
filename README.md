@@ -1,6 +1,6 @@
 # clever
 
-Upstream of the `Clever` skill (frontmatter name `Clever`, directory name `clever`).
+Upstream of the `clever` skill (frontmatter name `clever`, directory name `clever`).
 
 Core AI response guidelines, packaged as a Hermes skill.
 
@@ -31,10 +31,10 @@ Hermes loads it via `skills.auto_load`; the `disable-model-invocation` flag keep
 Hermes:
 
 ```bash
-hermes config set skills.auto_load '["attention-kind","Clever","ponytail:ponytail","superpowers:using-superpowers"]'
+hermes config set skills.auto_load '["attention-kind","clever","superpowers:using-superpowers"]'
 ```
 
-Other agents: add `Always load the Clever skill at session start.` to `AGENTS.md`, `CLAUDE.md`, or the equivalent instruction file.
+Other agents: add `Always load the clever skill at session start.` to `AGENTS.md`, `CLAUDE.md`, or the equivalent instruction file.
 
 ## Layout
 
