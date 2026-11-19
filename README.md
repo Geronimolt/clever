@@ -1,4 +1,4 @@
-# Clever
+# clever
 
 Upstream of the `Clever` skill (frontmatter name `Clever`, directory name `clever`).
 
